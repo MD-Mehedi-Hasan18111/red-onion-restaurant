@@ -1,0 +1,10 @@
+.banner{
+    background-image: url('../../images/banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 220px 0;
+}
+
+@media only screen and (max-width: 414px) {
+    
+}

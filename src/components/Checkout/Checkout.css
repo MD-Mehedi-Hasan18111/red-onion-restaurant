@@ -1,0 +1,9 @@
+.form input{
+    width: 75%;
+    height: 40px;
+    text-indent: 10px;
+    outline: none;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+}

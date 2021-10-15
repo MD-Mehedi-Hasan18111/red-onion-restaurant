@@ -1,0 +1,13 @@
+
+
+
+@media only screen and (max-width: 414px) {
+    .row{
+        text-align: center;
+    }
+
+    .displayName{
+        display: block;
+        margin: 13px;
+    }
+}
