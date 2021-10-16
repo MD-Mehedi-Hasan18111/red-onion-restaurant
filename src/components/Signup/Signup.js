@@ -72,12 +72,12 @@ const Signup = () => {
             <div className="signup-page">
                 <div className="signup-area">
                     {
-                        error ? <div class="alert alert-danger" role="alert">
+                        error ? <div className="alert alert-danger" role="alert">
                             {error}
                         </div> : ''
                     }
                     {
-                        success && <div class="alert alert-success" role="alert">
+                        success && <div className="alert alert-success" role="alert">
                             User sign up successfully! Now user can sign in.
                         </div>
                     }
@@ -95,7 +95,7 @@ const Signup = () => {
                     </form>
                     <p>---------------------- or ----------------------</p>
                     <div className="text-center m-0">
-                        <button onClick={signInGoogle} className="m-0 g-btn"><i class="fab fa-google"></i> Sign In With Google</button>
+                        <button onClick={signInGoogle} className="m-0 g-btn"><i className="fab fa-google"></i> Sign In With Google</button>
                     </div>
                 </div>
             </div>

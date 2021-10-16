@@ -4,7 +4,7 @@ import useAuth from '../../contexts/useAuth';
 import CartItem from '../CartItem/CartItem';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import { useState } from 'react/cjs/react.development';
+import { useState } from 'react';
 import { useHistory } from 'react-router';
 
 const Checkout = () => {
@@ -12,10 +12,10 @@ const Checkout = () => {
     const { carts } = useAuth();
     const [cart, setCart] = carts;
 
-    const [userName, setUserName] = useState('');
-    const [userHouse, setUserHouse] = useState('');
-    const [userCountry, setUserCountry] = useState('');
-    const [userPhone, setUserPhone] = useState('');
+    const [userName, setUserName] = useState("");
+    const [userHouse, setUserHouse] = useState("");
+    const [userCountry, setUserCountry] = useState("");
+    const [userPhone, setUserPhone] = useState("");
     const [success, setSuccess] = useState(false);
     const { delivery } = useAuth();
     const [userInfo, setUserInfo] = delivery;
@@ -38,7 +38,7 @@ const Checkout = () => {
         history.push('/placeorder');
     }
 
-    // console.log(userInfo);
+    console.log(userInfo);
 
     let subtotal = 0;
     for (const item of cart) {
@@ -75,7 +75,7 @@ const Checkout = () => {
                         <h6>From <span className="fw-bold">Red Onion Restaurant Gulshan, Dhaka.</span></h6>
                         <p>Arriving in 20 to 30 min</p>
                         {
-                            cart?.map(item => <CartItem item={item} />)
+                            cart?.map(item => <CartItem key={item.id} item={item} />)
                         }
                         <hr style={{ border: "1px solid #000" }} />
                         <div className="text-left d-flex justify-content-between w-100">

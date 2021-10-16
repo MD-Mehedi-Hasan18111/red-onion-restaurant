@@ -3,10 +3,10 @@ import { useState } from "react"
 
 const useDeliveryInfo = () => {
     const [userInfo, setUserInfo] = useState({
-        name: null,
-        house: null,
-        country: null,
-        phone: null,
+        name: '',
+        house: '',
+        country: '',
+        phone: '',
         save: false
     })
 
