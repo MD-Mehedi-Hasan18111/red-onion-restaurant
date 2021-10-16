@@ -63,7 +63,7 @@ const Checkout = () => {
                     <div className="col-lg-6 col-md-6 col-sm-12">
                         <h3>Edit your delivery Details</h3>
                         <hr style={{ border: "1px solid #000", width: "75%" }} />
-                        <form onSubmit={saveUserInfo} className="form">
+                        <form onSubmit={saveUserInfo} className="forms">
                             <input onBlur={(e) => setUserName(e.target.value)} type="text" placeholder="Name" required /><br /><br />
                             <input onBlur={(e) => setUserHouse(e.target.value)} type="text" placeholder="House or City" required /><br /><br />
                             <input onBlur={(e) => setUserCountry(e.target.value)} type="text" placeholder="Country" required /><br /><br />

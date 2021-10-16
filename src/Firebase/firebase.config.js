@@ -1,10 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCTSD5er4atm7IKa2Iv9zxrb6aGMuqWuaE",
-    authDomain: "red-onion-restaurant-d72c5.firebaseapp.com",
-    projectId: "red-onion-restaurant-d72c5",
-    storageBucket: "red-onion-restaurant-d72c5.appspot.com",
-    messagingSenderId: "231630027704",
-    appId: "1:231630027704:web:690d9291620458484f2d4d"
+    apiKey: "AIzaSyARqoZJ85_gHXuovioKc9GGr5nmFA77f3Q",
+    authDomain: "red-onion-restaurant-76e92.firebaseapp.com",
+    projectId: "red-onion-restaurant-76e92",
+    storageBucket: "red-onion-restaurant-76e92.appspot.com",
+    messagingSenderId: "824642539410",
+    appId: "1:824642539410:web:af617df498643bdf74bb4b"
 };
 
 export default firebaseConfig;
