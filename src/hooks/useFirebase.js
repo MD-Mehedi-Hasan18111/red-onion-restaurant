@@ -24,17 +24,6 @@ const useFirebase = () => {
             })
     }
 
-    // useEffect(() => {
-    //     onAuthStateChanged(auth, (user) => {
-    //         if (user) {
-    //             setUser(user);
-    //         }
-    //         else {
-    //             setUser({});
-    //         }
-    //     })
-    // }, [])
-
     return [user, setUser, googleSignIn, logOut];
 
 }
